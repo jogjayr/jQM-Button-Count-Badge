@@ -3,3 +3,10 @@ KNOWN ISSUES:
 Doesn't yet work for <button> tags
 
 
+Usage:
+
+$("something that identifies a jqm button object").mobileBadge({
+																count: 5, //what number you want appearing on the badge
+																position: "topleft" //where the badge should appear relative to button (
+																					//takes values "topleft" and "topright"
+															});

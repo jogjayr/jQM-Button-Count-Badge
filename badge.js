@@ -16,10 +16,10 @@
 			$.extend(settings, options);
 		}
         if(settings.position === "topright" ) {
-            badgeMarkup = "<span class='count_badge badge_position_right'><span class='badge_count'>"+settings.count+"</span></span>";
+            badgeMarkup = "<span class='count_badge badge_position_right'><span class='badge_count'>" + settings.count + "</span></span>";
         }
         else {
-            badgeMarkup = "<span class='count_badge badge_position_left'><span class='badge_count'>"+settings.count+"</span></span>";
+            badgeMarkup = "<span class='count_badge badge_position_left'><span class='badge_count'>" + settings.count + "</span></span>";
         }
 		this.children(".count_badge").remove();
 		this.append(badgeMarkup); 
