@@ -1,0 +1,28 @@
+.count_badge {
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 1.3em;
+    font-size: 0.7em;
+    background: #ff3019; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* IE10+ */
+    background: radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.badge_count {
+    margin-left: 4px;
+}
+.badge_position_left {
+    top: -5px;
+    left: -5px;
+}
+.badge_position_right {
+    top: -5px;
+    right: -5px;
+}
