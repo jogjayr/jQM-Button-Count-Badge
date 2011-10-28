@@ -14,6 +14,8 @@
     background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* IE10+ */
     background: radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    border-color: white;
 }
 .badge_count {
     margin-left: 4px;
