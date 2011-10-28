@@ -7,10 +7,16 @@
         if(options.position !== "topleft" && options.position !== "topright") {
             throw options.position + " is not a valid position for the count badge. Specify 'topleft' or 'topright'";
         }
-        var count = options.count,
-            position = options.position,
-            badgeMarkup = "";
-        if(position === "topright" ) {
+        
+        var settings = {
+				position: "topright"
+			},
+			count = options.count,
+			badgeMarkup = "";
+		if(options) {
+			$.extend(settings, options);
+		}
+        if(defaults.position === "topright" ) {
             badgeMarkup = "<span class='count_badge badge_position_right'><span class='badge_count'>"+count+"</span></span>";
         }
         else {
