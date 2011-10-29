@@ -23,8 +23,16 @@
 .badge_position_left {
     top: -5px;
     left: -5px;
+    box-shadow: 1px 1px 4px #000;
+    -moz-box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 1px 1px 4px #000;
 }
 .badge_position_right {
     top: -5px;
     right: -5px;
+    -moz-box-shadow: -1px 1px 4px #000;
+    -webkit-box-shadow: -1px 1px 4px #000;
+    box-shadow: -1px 1px 4px #000;
 }
+
+
