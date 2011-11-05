@@ -11,7 +11,8 @@
         var settings = {
 				position: "topright"
 			},
-			badgeMarkup = "";
+			badgeMarkup = "",
+			attachToElement = this;
 		if(options) {
 			$.extend(settings, options);
 		}
@@ -21,8 +22,12 @@
         else {
             badgeMarkup = "<span class='count_badge badge_position_left'><span class='badge_count'>" + settings.count + "</span></span>";
         }
-		this.children(".count_badge").remove();
-		this.append(badgeMarkup); 
+        
+        if(this.is("input[type='radio']")) {
+			attachToElement = this.next();
+		}
+		attachToElement.children(".count_badge").remove();
+		attachToElement.append(badgeMarkup); 
         return this;
    };
 }(jQuery));
