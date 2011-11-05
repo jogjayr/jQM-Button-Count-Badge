@@ -1,4 +1,4 @@
-.count_badge {
+.badge_fixed {
     position: absolute;
     border-width: 2px;
     border-style: solid;
@@ -6,7 +6,11 @@
     height: 1.3em;
     border-radius: 1.3em;
     font-size: 0.7em;
-    background: #ff3019; /* Old browsers */
+    
+}
+
+.badge_variable {
+	background: #ff3019; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
     background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
@@ -17,6 +21,7 @@
     color: white;
     border-color: white;
 }
+
 .badge_count {
     margin-left: 4px;
 }
