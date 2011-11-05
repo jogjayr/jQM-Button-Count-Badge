@@ -26,6 +26,9 @@
         if(this.is("input[type='radio']")) {
 			attachToElement = this.next();
 		}
+		else if(this.is("button")) {
+			attachToElement = this.parent();
+		}
 		attachToElement.children(".count_badge").remove();
 		attachToElement.append(badgeMarkup); 
         return this;
