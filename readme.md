@@ -2,8 +2,8 @@
 
     $("something that identifies a SINGLE jqm button object").mobileBadge({
         count: 5, //what number you want appearing on the badge
-        position: "topleft", //where the badge should appear relative to button (
-        //takes values "topleft" and "topright"
+        position: "topleft", //where the badge should appear relative to button
+                             //takes values "topleft" and "topright"
         classnames: "my_special_class" //to apply custom styling to the button
         //can also be an array of class names
     });
